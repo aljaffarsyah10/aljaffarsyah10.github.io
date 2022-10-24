@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cek Harga</title>
+<link rel="stylesheet" type="text/css" href="index/css/bootstrap.css">
+<script type="text/javascript" src="index/js/jquey.js"></script>
+<script type="text/javascript" src="index/js/bootstrap.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+</head>
+<!-- <body bg background="index/f5.png"> -->
+	
+<!-- <body style="background-image:url(bg.jpeg)"> -->
+  <!-- <body class="bg-dark"> -->
+	<body class="bg-secondary">
+
+<style>
+
+</style>
+<nav class="navbar navbar-expand-lg navbar-dark  bg-dark fixed-top">
+  <a class="navbar-brand" href="index/logo.png">
+    <img src="index/logo.png" alt="Logo" style="width:40px;">
+  </a>
+
+  <a class="navbar-brand" href="Tugas praktikum web 1.html">AlJAFFARSYAH</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="tugas 1/data.html">About me</a>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" >
+          Blog
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="tugas 1/Tugas_1(DataDiri_OktaGilang).html" >Tugas 1</a>
+          <a class="dropdown-item" href="tugas 2/tugas 2.html" >Tugas 2</a>
+          <a class="dropdown-item" href="tugas 3/tugas 3.html" >Tugas 3</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0" style="margin-bottom: auto">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<div class="container text-center bg-dark text-white" style="margin-top: 80px; margin-bottom:30px; border-radius: 5px; box-shadow: #061320;
+	border: 10px; border-color: blanchedalmond;">
+	<h1> </h1>
+	<h5 style="color: white; font-family:verdana"> SELAMAT DATANG DI WEBSITE <i>ALJAFFARSYAH</i> </H5>
+
+	<!-- <marquee><h5 style="color: white; font-family:verdana"> SELAMAT DATANG DI WEBSITE <i>ALJAFFARSYAH</i> </H5></marquee> -->
+	<!-- <h1>Calculator <i>Crypto</i></h1> -->
+	<!-- <p>menggunakan</p> -->
+	<!-- <h2 class="display-4"><b>Welcome </b>to <i><b>Aljaffarsyah Blog</b></i></i></h2> -->
+</div>
+
+
+
+	
+
+<!-- <style>
+    table.tabel2 {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td,
+table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+</style> -->
+
+<style>
+table{
+        border-collapse: collapse;
+        width: 98%;
+        margin: 1%;
+        padding: 10px;
+        /* max-width: 90%; */
+    }
+ 
+
+table td,
+table th {
+  border: 1px solid #ddd;
+  padding: 4px;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+</style>
+
+<p><b>Update data dalam: <span id="timer">0</span> Detik</b></p>
+
+<!-- <fieldset style=" margin:center ; background-color: #29c8f0; margin-left:10px ; margin-right: 10px; border-radius: 3px; ; " > -->
+<fieldset style=" margin:center ; background-color: white; margin-left:10px ; margin-right: 10px; border-radius: 3px; ; " >
+    <legend style="background-size: 1000px;text-align: center; background-color: #061320; border-radius: 5px;"; align="center";><h1 style="font-family:arial">
+        <font color= "white">Kalkulator Koin <i>Crypto</i></h1></legend></font>
+
+
+    <!-- <form name= "koin"> -->
+        <form name="koin">
+    <table class="tabel2" id="koin"  border="2" cellpadding="3" >
+        <tr style="padding:10px;  text-align: center;" height="150">
+            <th>Nama Koin</th>
+            <th>Harga Koin Beli</th>
+            <th>Total Long</th>
+            <th>Harga Koin Sekarang</th>
+            <th>Fee beli</th>
+            <th>Long yang didapat</th>
+            <th>Estimasi Pertambahan Volume</th>
+            <th>Total short (sekarang)</th>
+            <th>Fee jika jual</th>
+            <th>Short yang didapat</th>
+            <th>Estimasi Profit awal</th>
+            <th>Estimasi Persen Profit awal</th>
+            <th>Estimasi Profit akhir</th>
+            <th>Estimasi Persen akhir</th>
+            <th>Reduce profit</th>
+            <th>Jumlah Koin</th>	
+        </tr>
+
+        <tr style="padding:5px;  text-align: center;">
+            <td>BTC</td>
+            <td><input type="text" size="10" placeholder="Harga Koin beli" name="hargaAwal"></td>
+            <!-- <td><textarea type="text" size="10" placeholder="Harga Koin beli" name="hargaAwal" value="1231">16601</textarea></td> -->
+            <td><input type="text" size="10" placeholder="Total Long" name="totalLong"></td>
+            <!-- <td><input type="text" size="10" placeholder="Harga koin sekarang" name="hargaAkhir"</td> -->
+            <td id="koinpc"></td>
+            
+            <td id="feeLong"></td>
+            <td id="longFinal" ></td>
+            <td id="developVolume"></td>
+            <td id="totalShort"></td>
+            <td id="feeShort"></td>
+            <td id="shortFinal"></td>
+            <td id="profitAwal"></td>
+            <td id="persenProfitAwal"></td>
+            <td id="profitAkhir"></td>
+            <td id="persenProfitAkhir"></td>
+            <td id="reduceProfit"></td>
+            <td id="totalKoin"></td>
+        </tr>
+
+</table>
+<button style="margin: 3px 3px 3px 3px; border-radius: 10px;" type="button" name="submit" onclick="update()" >Update</button>
+
+</form>
+
+
+</fieldset>
+
+
+
+<!-- <form>
+
+<table class="tabel2" id="koin1">
+  <tr>
+	<th>Pairs</th>
+	<th>Harga</th>
+	<th>Beli</th>
+	<th>jual</th>
+	<th>Tertinggi 24h</th>
+	<th>Terendah 24h</th>
+  </tr>
+</table>
+</form> -->
+
+<script src="calc_coin3.js"></script>
+
+</body>
+</html>

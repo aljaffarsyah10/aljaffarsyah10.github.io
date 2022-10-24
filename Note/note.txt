@@ -1,0 +1,6 @@
+note: 
+container: 
+The .container class provides a responsive fixed width container
+sesuai dengan screen
+The .container-fluid class provides a full width container, spanning the entire width of the viewport
+full screen

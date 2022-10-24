@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cek Harga</title>
+<link rel="stylesheet" type="text/css" href="index/css/bootstrap.css">
+<script type="text/javascript" src="index/js/jquey.js"></script>
+<script type="text/javascript" src="index/js/bootstrap.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+</head>
+<!-- <body bg background="index/f5.png"> -->
+	
+<!-- <body style="background-image:url(bg.jpeg)"> -->
+  <!-- <body class="bg-dark"> -->
+	<body class="bg-secondary">
+
+<style>
+
+</style>
+<nav class="navbar navbar-expand-lg navbar-dark  bg-dark fixed-top">
+  <a class="navbar-brand" href="index/logo.png">
+    <img src="index/logo.png" alt="Logo" style="width:40px;">
+  </a>
+
+  <a class="navbar-brand" href="Tugas praktikum web 1.html">AlJAFFARSYAH</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index_hal2.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="tugas 1/data.html">About me</a>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" >
+          Blog
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="tugas 1/Tugas_1(DataDiri_OktaGilang).html" >Tugas 1</a>
+          <a class="dropdown-item" href="tugas 2/tugas 2.html" >Tugas 2</a>
+          <a class="dropdown-item" href="tugas 3/tugas 3.html" >Tugas 3</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0" style="margin-bottom: auto">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<div class="container text-center bg-dark text-white" style="margin-top: 80px; margin-bottom:30px; border-radius: 5px; box-shadow: #061320;
+	border: 10px; border-color: blanchedalmond;">
+	<h1> </h1>
+	<marquee><h5 style="color: white; font-family:verdana"> SELAMAT DATANG DI WEBSITE <i>ALJAFFARSYAH</i> </H5></marquee>	
+
+	<!-- <marquee><h5 style="color: white; font-family:verdana"> SELAMAT DATANG DI WEBSITE <i>ALJAFFARSYAH</i> </H5></marquee> -->
+	<!-- <h1>Calculator <i>Crypto</i></h1> -->
+	<!-- <p>menggunakan</p> -->
+	<!-- <h2 class="display-4"><b>Welcome </b>to <i><b>Aljaffarsyah Blog</b></i></i></h2> -->
+</div>
+
+
+
+	<form name= "koin">
+		<!-- <fieldset style=" margin:center ; background-color: #29c8f0; margin-left:10px ; margin-right: 10px; border-radius: 3px; ; "  align="center"> -->
+		<fieldset style=" margin:center ; background-color: #29c8f0; margin-left:10px ; margin-right: 10px; border-radius: 3px; ; " >
+		<legend style="background-size: 1000px;text-align: center; background-color: #061320; border-radius: 5px;"; align="center";><h1 style="font-family:arial">
+				<font color= "white">Kalkulator Koin <i>Crypto</i></h1></legend></font>
+		<table id="coinss" align="center" style="padding: 10px; margin: 10px 10px 10px 10px;" border="2" cellpadding="3" >
+			<tr style="padding:10px;  text-align: center;" height="100">
+				<td>Nama Koin</td>
+				<td>Harga Koin Beli</td>
+				<td>Total Long</td>
+				<td>Harga Koin Sekarang</td>
+				<td>Fee beli</td>
+				<td>Long yang didapat</td>
+				<td>Estimasi Pertambahan Volume</td>
+				<td>Total short (sekarang)</td>
+				<td>Fee jika jual</td>
+				<td>Short yang didapat</td>
+				<td>Estimasi Profit awal</td>
+				<td>Estimasi Persen Profit awal</td>
+				<td>Estimasi Profit akhir</td>
+				<td>Estimasi Persen akhir</td>
+				<td>Reduce profit</td>
+				<td>Jumlah Koin</td>	
+			</tr>
+
+			<tr style="padding:5px;  text-align: center;">
+				<td>BTC</td>
+				<td><input type="text" size="10" placeholder="Harga Koin beli" name="hargaAwal"></td>
+				<!-- <td><textarea type="text" size="10" placeholder="Harga Koin beli" name="hargaAwal" value="1231">16601</textarea></td> -->
+				<td><input type="text" size="10" placeholder="Total Long" name="totalLong"></td>
+				<td><input type="text" size="10" placeholder="Harga koin sekarang" name="hargaAkhir"</td>
+				<td id="feeLong"></td>
+				<td id="longFinal" anm></td>
+				<td id="developVolume"></td>
+				<td id="totalShort"></td>
+				<td id="feeShort"></td>
+				<td id="shortFinal"></td>
+				<td id="profitAwal"></td>
+				<td id="persenProfitAwal"></td>
+				<td id="profitAkhir"></td>
+				<td id="persenProfitAkhir"></td>
+				<td id="reduceProfit"></td>
+				<td id="totalKoin"></td>
+
+			<!-- </tr>
+				<td>ETH</td>
+				<td><input type="text" size="10" placeholder="Harga Koin beli" name="hargaAwal"></td>
+				<td><input type="text" size="10" placeholder="Total Long" name="totalLong"></td>
+				<td><input type="text" size="10" placeholder="Harga koin sekarang" name="hargaAkhir"</td>
+				<td id="feeLong"></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			<tr> -->
+
+			</tr>
+
+			<!-- <tr>
+				<td><button type="button" name="submit" onclick="update()">Update</button></td>
+			</tr> -->
+
+		</table>
+		<button style="margin: 3px 3px 3px 3px; border-radius: 10px;" type="button" name="submit" onclick="update()" >Calculate / Update</button>
+		</fieldset>
+
+	</form>	
+
+<script>
+function update(){
+	var hargaAwal = document.koin.hargaAwal.value;
+	var hargaAkhir = document.koin.hargaAkhir.value;
+	var totalLong = document.koin.totalLong.value;
+
+// alert("tes");
+
+var feeLong2 = document.getElementById("feeLong");
+var feeLong = parseInt(0.001*totalLong);	
+feeLong2.innerText = feeLong;
+
+var longFinal2 = document.getElementById("longFinal");
+longFinal = parseInt(0.997*totalLong);
+longFinal2.innerText = longFinal;
+
+var developVolume2 = document.getElementById("developVolume");
+developVolume = Math.round(((hargaAkhir-hargaAwal)/hargaAwal)*100);
+developVolume2.innerText = developVolume + " %";
+
+var totalShort2 = document.getElementById("totalShort")
+totalShort = parseInt(((developVolume/100)+1)*longFinal);
+totalShort2.innerText = totalShort;
+
+var feeShort2 = document.getElementById("feeShort");
+feeShort = parseInt(0.001*totalShort);
+feeShort2.innerText = feeShort;
+
+var shortFinal2 = document.getElementById("shortFinal");
+shortFinal = parseInt(0.997*totalShort);
+shortFinal2.innerText = shortFinal;
+
+var profitAwal2 = document.getElementById("profitAwal");
+profitAwal = parseInt(totalShort - totalLong);
+profitAwal2.innerText = profitAwal;
+
+var persenProfitAwal2 = document.getElementById("persenProfitAwal");
+persenProfitAwal = ((profitAwal/totalLong)*100).toFixed(2);
+persenProfitAwal2.innerText = persenProfitAwal + " %";
+
+var profitAkhir2 = document.getElementById("profitAkhir");
+profitAkhir = parseInt(shortFinal - totalLong);
+profitAkhir2.innerText = profitAkhir;
+
+var persenProfitAkhir2 = document.getElementById("persenProfitAkhir");
+persenProfitAkhir = ((profitAkhir/totalLong)*100).toFixed(2);
+persenProfitAkhir2.innerText = persenProfitAkhir + " %";
+
+var reduceProfit2 = document.getElementById("reduceProfit");
+reduceProfit = (((profitAkhir - profitAwal)/totalLong)*100).toFixed(2);
+reduceProfit2.innerText = reduceProfit + " %";
+
+var totalKoin2 = document.getElementById("totalKoin");
+totalKoin = (longFinal/hargaAwal).toFixed(5);
+totalKoin2.innerText = totalKoin;
+
+}
+
+</script>
+
+<!-- <style>
+    table2 {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td,
+table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+</style> -->
+
+
+<!-- <p><b>Update data dalam: <span id="timer">0</span> Detik</b></p>
+<form>
+
+<table class="table2" id="koin">
+  <tr>
+	<th>Pairs</th>
+	<th>Harga</th>
+	<th>Beli</th>
+	<th>jual</th>
+	<th>Tertinggi 24h</th>
+	<th>Terendah 24h</th>
+  </tr>
+</table>
+</form> -->
+
+<script src="calc_coin2.js"></script>
+
+</body>
+</html>

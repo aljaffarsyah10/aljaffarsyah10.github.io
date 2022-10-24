@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cek Harga</title>
+</head>
+
+<body style="background-image:url(bg.jpeg)">
+	<form name = "belanjaan">
+		<marquee><h1 style="color: white; font-family:verdana"> SELAMAT DATANG DI <i>ALJ</i> FURNITURE</h1></marquee>
+		<h3 style="color:white " align="center">Anda ingin membeli furniture? disini Tempatnya.</h3>
+		<H5 style="color:white" align="center">cek harga furniture anda dibawah</H5>
+		<fieldset style="width: 50%; margin:left ; background-color: #29c8f0;  ">
+			<legend style="background-size: 1000px; background-color: #061320"; align="center";><h1 style="font-family:arial"><font color= "white">HARGA FURNITURE</h1></legend></font>
+			<table align="center">
+				<tr>
+					<td><b>Jenis Barang</b></td>
+					<td>:</td>
+					<td><select name="jenis" onchange="jenis_barang()" >
+						<option value="Kursi">Kursi(1 set)</option>
+						<option value="Meja">Meja</option>
+						<option value="Lemari">Lemari pakaian (2 pintu)</option>
+						<option value="ranjang">Ranjang</option>
+						<option value="3laci">lemari (3 laci)</option>
+						<option value="TV">Meja TV</option>
+					</td>
+				</tr>
+				<tr>
+					<td><b>Jumlah Barang</b></td>
+					<td>:</td>
+					<td><input type="textbox" name="satu" size="24" placeholder="Jumlah"></td>
+				</tr>
+				<tr>
+					<td><b>Harga Rp</b></td>
+					<td>:</td>
+					<td><input type="textbox" name="dua" size="24" placeholder="Rp. ...,-"></td>
+				</tr>
+				<tr>
+					<td><b>Kode Voucher</b></td>
+					<td>:</td>
+					<td><input type="textbox" name="kode" placeholder="Kode"  size="24"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><button type="button" onclick= "hitung() "name="submit">Lihat Harga</button>&nbsp;<button type="reset">reset</button>
+				</td>
+				</tr>
+			
+			</table>
+			
+		</fieldset>
+	</form>
+
+<script>
+	function hitung(){
+		var kode=document.belanjaan.kode.value;
+		a=document.belanjaan.satu.value;
+		b=document.belanjaan.dua.value;
+		hasil=a*b;
+		diskon1=hasil-(hasil*0.5)
+		diskon2=hasil-(hasil*0.25)
+		diskon3=hasil-(hasil*0.1)
+		hasil=hasil
+	if (kode=="TI50")alert("Selamat! Anda mendapat diskon 50% \nHarga Total (setelah diskon) = Rp." + diskon1)
+	else if (kode=="TI25")alert("Selamat! Anda mendapat diskon diskon 25% \nHarga Total (setelah diskon)= Rp." + diskon2)
+	else if (kode=="TI10")alert("Selamat! Anda mendapat diskon diskon 10% \nHarga Total (setelah diskon) = Rp." + diskon3)
+	else alert ("Kode Invalid! \nHarga Total = Rp." + hasil)
+		
+
+		}
+
+	function jenis_barang(){
+		var tipe=document.belanjaan.jenis.value;
+		if (tipe == "Kursi"){gee = 8000000;}
+		else if (tipe == "Meja"){gee = 42500000;}
+		else if (tipe == "Lemari"){gee = 7800000;}
+		else if (tipe == "Ranjang"){gee = 3750000;}
+		else if (tipe == "3laci"){gee =1500000;}
+		else if (tipe == "tv"){gee = 2000000;}
+		document.belanjaan.dua.value = eval(gee);
+	}
+</script>
+
+
+</body>
+</html>
